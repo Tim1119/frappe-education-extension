@@ -242,3 +242,14 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+# In hooks.py
+# In apps/education_extension/education_extension/hooks.py
+
+
+doc_events = {
+    "Assessment Criteria": {
+        "validate": "education_extension.overrides.assessment_criteria.validate_assessment_criteria"
+    }
+}

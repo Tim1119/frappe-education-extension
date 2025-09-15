@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-15 10:09:00.535624",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_student_information_section",
+  "student",
+  "student_group",
+  "student_admission_id",
+  "column_break_yoxw",
+  "academic_term",
+  "academic_year",
+  "basic_class_information_section",
+  "number_of_students_in_class",
+  "column_break_jhoi",
+  "number_of_students_in_class_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_yoxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_term",
+   "fieldtype": "Link",
+   "label": "Academic Term",
+   "options": "Academic Term"
+  },
+  {
+   "fieldname": "academic_year",
+   "fieldtype": "Link",
+   "label": "Academic Year",
+   "options": "Academic Year"
+  },
+  {
+   "fieldname": "student_group",
+   "fieldtype": "Link",
+   "label": "Student Group",
+   "options": "Student Group"
+  },
+  {
+   "fieldname": "basic_student_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Student Information"
+  },
+  {
+   "fieldname": "student_admission_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Student Admission ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_class_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Class Information"
+  },
+  {
+   "fieldname": "number_of_students_in_class",
+   "fieldtype": "Int",
+   "label": "Number of Students in Class"
+  },
+  {
+   "fieldname": "column_break_jhoi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_students_in_class_group",
+   "fieldtype": "Int",
+   "label": "Number of Students in Class Group"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-15 10:22:10.961288",
+ "modified_by": "Administrator",
+ "module": "Education Extension",
+ "name": "School Term Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

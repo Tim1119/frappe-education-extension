@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-15 12:02:02.427369",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "school",
+  "section_break_lfwp",
+  "assessment_criteria_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "school",
+   "fieldtype": "Link",
+   "label": "School",
+   "options": "Company"
+  },
+  {
+   "fieldname": "section_break_lfwp",
+   "fieldtype": "Section Break",
+   "label": "School Result Settings"
+  },
+  {
+   "fieldname": "assessment_criteria_item",
+   "fieldtype": "Table",
+   "label": "Assessment Criteria Item",
+   "options": "Assessment Criteria Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-09-15 13:34:07.755952",
+ "modified_by": "Administrator",
+ "module": "Education Extension",
+ "name": "School Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
