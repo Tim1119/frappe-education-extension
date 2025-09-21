@@ -7,15 +7,39 @@
  "field_order": [
   "basic_student_information_section",
   "student",
+  "assessment_group",
   "student_group",
   "student_admission_id",
+  "term_start_date",
   "column_break_yoxw",
   "academic_term",
   "academic_year",
+  "gender",
+  "term_end_date",
   "basic_class_information_section",
   "number_of_students_in_class",
   "column_break_jhoi",
-  "number_of_students_in_class_group"
+  "number_of_students_in_class_group",
+  "section_break_hfoj",
+  "subjects",
+  "section_break_fnzx",
+  "total_marks_obtained",
+  "overall_grade",
+  "class_position",
+  "column_break_wwze",
+  "total_max_marks",
+  "term_average",
+  "class_arm_position",
+  "section_break_cgxm",
+  "total_days",
+  "days_absent",
+  "column_break_vais",
+  "days_present",
+  "attendance_percentage",
+  "administrative__notes_section",
+  "date_of_result_issue",
+  "column_break_skqp",
+  "comments__notes"
  ],
  "fields": [
   {
@@ -34,19 +58,24 @@
    "fieldname": "academic_term",
    "fieldtype": "Link",
    "label": "Academic Term",
-   "options": "Academic Term"
+   "options": "Academic Term",
+   "reqd": 1
   },
   {
    "fieldname": "academic_year",
    "fieldtype": "Link",
    "label": "Academic Year",
-   "options": "Academic Year"
+   "options": "Academic Year",
+   "reqd": 1
   },
   {
    "fieldname": "student_group",
    "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
    "label": "Student Group",
-   "options": "Student Group"
+   "options": "Student Group",
+   "read_only": 1
   },
   {
    "fieldname": "basic_student_information_section",
@@ -57,8 +86,7 @@
    "fieldname": "student_admission_id",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Student Admission ID",
-   "reqd": 1
+   "label": "Student Admission ID"
   },
   {
    "fieldname": "basic_class_information_section",
@@ -68,7 +96,8 @@
   {
    "fieldname": "number_of_students_in_class",
    "fieldtype": "Int",
-   "label": "Number of Students in Class"
+   "label": "Number of Students in Class",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_jhoi",
@@ -77,13 +106,140 @@
   {
    "fieldname": "number_of_students_in_class_group",
    "fieldtype": "Int",
-   "label": "Number of Students in Class Group"
+   "label": "Number of Students in Class Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender",
+   "read_only": 1
+  },
+  {
+   "fieldname": "term_start_date",
+   "fieldtype": "Date",
+   "label": "Term Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "term_end_date",
+   "fieldtype": "Date",
+   "label": "Term End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_fnzx",
+   "fieldtype": "Section Break",
+   "label": "Overall Performance"
+  },
+  {
+   "fieldname": "total_marks_obtained",
+   "fieldtype": "Float",
+   "label": "Total Marks Obtained"
+  },
+  {
+   "fieldname": "column_break_wwze",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_max_marks",
+   "fieldtype": "Float",
+   "label": "Total Max Marks"
+  },
+  {
+   "fieldname": "overall_grade",
+   "fieldtype": "Data",
+   "label": "Overall Grade"
+  },
+  {
+   "fieldname": "class_position",
+   "fieldtype": "Int",
+   "label": "Class Position"
+  },
+  {
+   "fieldname": "class_arm_position",
+   "fieldtype": "Int",
+   "label": "Class Arm Position"
+  },
+  {
+   "fieldname": "section_break_cgxm",
+   "fieldtype": "Section Break",
+   "label": "Attendance"
+  },
+  {
+   "fieldname": "total_days",
+   "fieldtype": "Int",
+   "label": "Total Days"
+  },
+  {
+   "fieldname": "column_break_vais",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "days_present",
+   "fieldtype": "Int",
+   "label": "Days Present"
+  },
+  {
+   "fieldname": "days_absent",
+   "fieldtype": "Int",
+   "label": "Days Absent"
+  },
+  {
+   "fieldname": "attendance_percentage",
+   "fieldtype": "Int",
+   "label": "Attendance Percentage"
+  },
+  {
+   "fieldname": "administrative__notes_section",
+   "fieldtype": "Section Break",
+   "label": "Administrative / Notes"
+  },
+  {
+   "fieldname": "date_of_result_issue",
+   "fieldtype": "Date",
+   "label": "Date of Result Issue"
+  },
+  {
+   "fieldname": "column_break_skqp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments__notes",
+   "fieldtype": "Small Text",
+   "label": "Comments / Notes"
+  },
+  {
+   "fieldname": "section_break_hfoj",
+   "fieldtype": "Section Break",
+   "label": "Result"
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Table",
+   "label": "Subjects",
+   "options": "Subject Result"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "assessment_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Assessment Group",
+   "options": "Assessment Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "term_average",
+   "fieldtype": "Float",
+   "label": "Term Average"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-15 10:22:10.961288",
+ "modified": "2025-09-21 18:07:12.652812",
  "modified_by": "Administrator",
  "module": "Education Extension",
  "name": "School Term Result",

@@ -21,3 +21,5 @@ def validate_assessment_criteria(doc, method):
     # Check if current criteria name is in valid list
     if doc.assessment_criteria not in valid_criteria:
         frappe.throw(_('Assessment Criteria "{0}" is not configured in School Settings. Please add it first.').format(doc.assessment_criteria))
+
+

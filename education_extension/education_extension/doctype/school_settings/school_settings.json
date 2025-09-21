@@ -7,7 +7,9 @@
  "field_order": [
   "school",
   "section_break_lfwp",
-  "assessment_criteria_item"
+  "assessment_criteria_item",
+  "overall_grading_scale_for_result_section",
+  "overall_grading_scale"
  ],
  "fields": [
   {
@@ -26,14 +28,25 @@
    "fieldtype": "Table",
    "label": "Assessment Criteria Item",
    "options": "Assessment Criteria Item"
+  },
+  {
+   "fieldname": "overall_grading_scale",
+   "fieldtype": "Table",
+   "label": "Overall Term Grading Scale",
+   "options": "Term Result Grade Scale"
+  },
+  {
+   "fieldname": "overall_grading_scale_for_result_section",
+   "fieldtype": "Section Break",
+   "label": "Overall Grading Scale For Result"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-15 13:34:07.755952",
- "modified_by": "Administrator",
+ "modified": "2025-09-21 18:32:59.562282",
+ "modified_by": "timothyinioluwa@gmail.com",
  "module": "Education Extension",
  "name": "School Settings",
  "owner": "Administrator",
