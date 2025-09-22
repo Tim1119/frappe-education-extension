@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "assessment_score_section",
+  "subject",
   "criteria",
   "score_obtained",
   "max_score"
@@ -38,14 +39,23 @@
    "fieldname": "assessment_score_section",
    "fieldtype": "Section Break",
    "label": "Assessment Score"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Subject",
+   "options": "Course"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-16 01:49:43.285828",
- "modified_by": "Administrator",
+ "modified": "2025-09-22 17:19:07.494667",
+ "modified_by": "timothyinioluwa@gmail.com",
  "module": "Education Extension",
  "name": "Assessment Score",
  "owner": "Administrator",
