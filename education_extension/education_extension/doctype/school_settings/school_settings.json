@@ -9,7 +9,9 @@
   "section_break_lfwp",
   "assessment_criteria_item",
   "overall_grading_scale_for_result_section",
-  "overall_grading_scale"
+  "overall_grading_scale",
+  "section_break_nfut",
+  "print_format"
  ],
  "fields": [
   {
@@ -39,13 +41,23 @@
    "fieldname": "overall_grading_scale_for_result_section",
    "fieldtype": "Section Break",
    "label": "Overall Grading Scale For Result"
+  },
+  {
+   "fieldname": "section_break_nfut",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "print_format",
+   "fieldtype": "Link",
+   "label": "Print Format",
+   "options": "Print Format"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-09-21 18:32:59.562282",
+ "modified": "2025-09-22 18:10:12.094226",
  "modified_by": "timothyinioluwa@gmail.com",
  "module": "Education Extension",
  "name": "School Settings",
